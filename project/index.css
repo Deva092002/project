@@ -1,0 +1,200 @@
+Body{
+    background-color: black;
+}
+.head{
+    color: rgb(111, 207, 245);
+    text-align: center;
+    padding-top: 40px;
+    animation: rotate 10s infinite linear, flicker 6s ease infinite;
+}
+.circle1{
+    height: 500px;
+    width: 500px;
+    border: 8px solid rgb(111, 207, 245);
+    border-radius: 50%;
+    display: block;
+    margin: -100px auto;
+}
+
+.innerCircle1{
+    height: 35px;
+    width: 70px;
+    border: 15px solid rgb(111, 207, 245);
+    border-radius: 42%;
+    position: relative;
+    top: 180px;
+    left: 608px;
+    border-right: 15px solid rgb(0 0 0);
+    border-left: 15px solid rgb(0 0 0);
+    border-bottom: 15px solid rgb(0 0 0);
+    transform: rotate(-2deg);
+}
+
+.innerCircle2 {
+    height: 35px;
+    width: 70px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: rgb(111, 207, 245) black black;
+    border-image: initial;
+    border-radius: 39%;
+    position: relative;
+    top: 391px;
+    left: 616px;
+    transform: rotate(-180deg);
+}
+
+.innerCircle3{
+    height: 35px;
+    width: 70px;
+    border: 15px solid rgb(111, 207, 245);
+    border-radius: 40%;
+    position: relative;
+    top: 265px;
+    left: 825px;
+    transform: rotate(-267deg);
+    border-right: 15px solid rgb(0 0 0);
+    border-left: 15px solid rgb(0 0 0);
+    border-bottom: 15px solid rgb(0 0 0);
+}
+.innerCircle4{
+    height: 35px;
+    width: 70px;
+    border: 15px solid rgb(111, 207, 245);
+    border-radius: 41%;
+    position: relative;
+    top: 332px;
+    left: 416px;
+    transform: rotate(-95deg);
+    border-right: 15px solid rgb(0 0 0);
+    border-left: 15px solid rgb(0 0 0);
+    border-bottom: 15px solid rgb(0 0 0);
+}
+
+.circle2{
+    height: 400px;
+    width: 400px;
+    border: 5px solid rgb(111, 207, 245);
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 50%;
+    display: block;
+    margin: -458px auto;
+    transform: rotate(-10deg);
+    animation: rotate 40s infinite linear;
+}
+
+.circle3{
+    height: 339px;
+    width: 350px;
+    border: 9px solid rgb(111, 207, 245);
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 9px solid black;
+    border-radius: 50%;
+    margin: 80px auto;
+    transform: rotate(80deg);
+    animation: rotate1 10s infinite linear , flicker 6s ease infinite;    
+}
+
+.circle4 {
+    height: 300px;
+    width: 300px;
+    border: 3px solid rgb(111, 207, 245);
+    border-radius: 50%;
+    margin: -400px auto;
+}
+
+@keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+@keyframes rotate1 {
+    from {
+        -webkit-transform: rotate(359deg);
+    }
+    to {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes flicker2 {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.circle5 {
+    height: 250px;
+    width: 250px;
+    border: 18px solid rgb(111, 207, 245);
+    border-radius: 50%;
+    display: block;
+    margin: 105px auto;
+    animation: flicker2 6s ease infinite;
+}
+
+.circle6 {
+    height: 200px;
+    width: 200px;
+    border: 5px solid rgb(111, 207, 245);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 50%;
+    display: block;
+    margin: -350px auto;
+    
+}
+
+.circle7 {
+    height: 150px;
+    width: 150px;
+    border: 5px solid rgb(111, 207, 245);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 50%;
+    display: block;
+    margin: 170px auto;
+    transform: rotate(-84deg);
+    animation: rotate 9s infinite linear;
+}
+
+#btn{
+    position: relative;
+    top: -263px;
+    left: 590px;
+    z-index: 1;
+    background: transparent;
+    color: azure;
+    font-size: 30px;
+    font-weight: 600;
+    border: none;
+}
+
+#btn:hover{
+    color: rgb(207, 207, 207);
+    cursor: pointer;
+}
